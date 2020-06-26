@@ -15,10 +15,20 @@
         <servlet-name>Calculator Service</servlet-name>
         <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>examples.Hello</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+	
    <welcome-file-list>
+	   <welcome-file>hello</welcome-file>
 	    <welcome-file>/api/*</welcome-file>
-	    <welcome-file>index.html</welcome-file>
-	    <welcome-file>index.htm</welcome-file>
-	    <welcome-file>index.jsp</welcome-file>
+	    <welcome-file>hello.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>
