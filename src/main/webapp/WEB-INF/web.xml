@@ -22,8 +22,8 @@
     </servlet-mapping>
 	
    <welcome-file-list>
-	   <welcome-file>Hello</welcome-file>
+	   <welcome-file>index.html</welcome-file>
 	    <welcome-file>/api/*</welcome-file>
-	    <welcome-file>Hello.jsp</welcome-file>
+	   
 	</welcome-file-list>
 </web-app>
