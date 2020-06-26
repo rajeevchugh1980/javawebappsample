@@ -1,10 +1,15 @@
-package examples;
+package ms.kenchen.Calculator;
 
-import java.applet.Applet;
-import java.awt.Graphics;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-public class Hello extends Applet {
-    public void paint(Graphics g) {
-        g.drawString("Hello world!", 50, 25);
-    }
+public class HelloWorld {
+
+  public static void main(final String[] args) {
+    final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("h:mm:ss a 'on' MMMM d, yyyy'.'");
+    final LocalDateTime now = LocalDateTime.now();
+
+    System.out.println("Hello, World! The current time is " + dtf.format(now));
+  }
+
 }
